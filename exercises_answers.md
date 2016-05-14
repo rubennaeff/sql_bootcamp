@@ -1,9 +1,10 @@
 # Exercises
 
 
-## Basic SQL retrieval
-
 Go to [W3 School's SQL Exercies](http://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all).
+
+
+## Basic SQL retrieval
 
 
 - Retrieve all columns from the `Customers` table
@@ -229,7 +230,7 @@ FROM [Products]
 ```
 
 
-## Additional exercises (no asnwers)
+## Additional exercises (no answers)
 
 - (*) What category has the most orders?
 
