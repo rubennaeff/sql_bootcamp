@@ -1,10 +1,12 @@
 # Exercises
 
 
+### Extraction
+
 Go to [W3 School's SQL Exercies](http://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all).
 
 
-## Basic SQL retrieval
+### Basic SQL retrieval
 
 
 - Retrieve all columns from the `Customers` table
@@ -72,7 +74,7 @@ LIMIT 20
 ```
 
 
-## Aggregates
+### Aggregates
 
 
 - How many orders were there in July 1996?
@@ -101,7 +103,7 @@ FROM Products
 ```
 
 
-## `GROUP BY`
+### `GROUP BY`
 
 - How many customers do we have per country?
 
@@ -138,7 +140,7 @@ HAVING NumberOfOrders >= 20
 ```
 
 
-## `JOIN`
+### `JOIN`
 
 
 - What is the name of the customer who has the most orders?
@@ -204,7 +206,7 @@ ORDER BY 3 DESC
 
 
 
-## Various functionality
+### Various functionality
 
 - List product name, price and column "Affordable" being "expensive" if the price is more than $30, and "cheap" otherwise.
 
@@ -230,8 +232,97 @@ FROM [Products]
 ```
 
 
-## Additional exercises (no answers)
+### Additional exercises (no answers)
 
 - (*) What category has the most orders?
 
 - (**) What supplier has the highest average product price, assuming they have at least 2 products?
+
+
+## Create, edit and drop
+
+Open your SQL Client to work on the following exercises.
+
+
+- Create a database called `sql_bootcamp` and show the tables in it.
+
+```sql
+CREATE DATABASE sql_bootcamp;
+USE sql_bootcamp;
+SHOW TABLES
+```
+
+
+- Create a table called `students` and fill it with the first and last names of the students in our class,
+as well as their city, state and zip, and favorite colors and numbers.
+
+```sql
+CREATE TABLE students (
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(20) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    city VARCHAR(30),
+    state CHAR(2),
+    zip CHAR(5),
+    favorite_color VARCHAR(10),
+    favorite_number INT,
+    PRIMARY KEY (id) );
+
+INSERT INTO students (first_name, last_name, city, state, zip)
+VALUES
+    ("Ruben", "Naeff", "Brooklyn", "NY", "11221"),
+    ("John", "Smith", "Astoria", "NY", "11102"),
+    ("Mike's", "Coffeeshop", "Brooklyn", "NY", "11205"),
+    ("General", "Assembly", "New York", "NY", "10010"),
+    ("Ruben", "Naeff", "Brooklyn", "NY", "11221"),
+    ("John", "Smith", "Astoria", "NY", "11102"),
+    ("Mike's", "Coffeeshop", "Brooklyn", "NY", "11205"),
+    ("General", "Assembly", "New York", "NY", "10010"),
+    ("Ruben", "Naeff", "Brooklyn", "NY", "11221"),
+    ("John", "Smith", "Astoria", "NY", "11102"),
+    ("Mike's", "Coffeeshop", "Brooklyn", "NY", "11205"),
+    ("General", "Assembly", "New York", "NY", "10010"),
+    ("Ruben", "Naeff", "Brooklyn", "NY", "11221"),
+    ("John", "Smith", "Astoria", "NY", "11102"),
+    ("Mike's", "Coffeeshop", "Brooklyn", "NY", "11205"),
+    ("General", "Assembly", "New York", "NY", "10010")
+```
+
+- What are the most popular cities/boroughs?
+
+```sql
+SELECT city, count(*)
+FROM students
+GROUP BY city
+ORDER BY 2 DESC
+```
+
+- Add and populate a column with their counties
+
+```sql
+ALTER TABLE students
+ADD county VARCHAR(10);
+UPDATE students
+SET county = 'Kings' WHERE city = 'Brooklyn';
+UPDATE students
+SET county = 'New York' WHERE city = 'New York';
+UPDATE students
+SET county = 'Queens' WHERE city NOT IN ('Brooklyn', 'New York')
+```
+
+- Remove some column for the table
+
+```sql
+ALTER TABLE students
+DROP favorite_color
+```
+
+- Delete the table and delete the database
+
+```sql
+DROP TABLE students
+DROP DATABASE sql_bootcamp
+```
+
+
+
