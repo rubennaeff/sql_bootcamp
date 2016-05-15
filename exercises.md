@@ -31,12 +31,12 @@ Go to [W3 School's SQL Exercies](http://www.w3schools.com/sql/trysql.asp?filenam
 
 - How many customers do we have per country?
 - Create a table with columns 'Country' and 'Number of customers', sorted from most to least number of customers.
-- Which employees sold at least 20 orders?
+- Give employee IDs for those who sold at least 20 orders.
 
 
 ### `JOIN`
 
-
+- Which employees sold at least 20 orders?
 - What is the name of the customer who has the most orders?
 - What supplier has the highest average product price?
 - What employee made the most sales (by number of orders)?
