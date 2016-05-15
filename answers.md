@@ -202,7 +202,7 @@ ORDER BY 3 DESC
 - (**) What employee made the most sales (by value of sales)?
 
 ```sql
-SELECT LastName, FirstName, Quantity * Price AS "Sales"
+SELECT LastName, FirstName, Round(Sum(Quantity * Price), 2) AS "Sales"
 FROM Employees
 JOIN Orders
 ON Employees.EmployeeID = Orders.EmployeeID
