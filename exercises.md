@@ -1,7 +1,7 @@
 # Exercises
 
 
-### Extraction
+## Extraction
 
 Go to [W3 School's SQL Exercies](http://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all).
 
@@ -48,6 +48,8 @@ Go to [W3 School's SQL Exercies](http://www.w3schools.com/sql/trysql.asp?filenam
 
 - List product name, price and column "Affordable" being "expensive" if the price is more than $30, and "cheap" otherwise.
 - Same list as above, but label products over $100 as "very expensive"
+- Produce a list with all full employee names
+- Produce a list with full names from both employees and customer contacts
 
 
 ### Additional exercises (no answers)

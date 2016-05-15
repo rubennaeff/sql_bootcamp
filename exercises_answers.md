@@ -231,6 +231,30 @@ SELECT
 FROM [Products]
 ```
 
+- Produce a list with all full employee names
+
+```sql
+SELECT FirstName + " " + LastName AS full_name
+FROM Employees
+```
+
+This one does not seem to be supported:
+
+```sql
+SELECT CONCAT(FirstName, ' ', LastName) AS full_name
+FROM Employees
+```
+
+- Produce a list with full names from both employees and customer contacts
+
+```sql
+SELECT FirstName + " " + LastName AS full_name
+FROM Employees
+UNION
+SELECT ContactName
+FROM Customers
+```
+
 
 ### Additional exercises (no answers)
 
