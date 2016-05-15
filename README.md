@@ -10,6 +10,6 @@
 ## Further exercises
 
 
-- [W3 School](http://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
+- [W3 School](http://www.w3schools.com/sql/)
 - [PostgreSQL Exercises](http://pgexercises.com)
 - [SQL Teaching](http://www.sqlteaching.com)
