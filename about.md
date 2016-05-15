@@ -45,5 +45,3 @@ Other server and client software is fine, too, and other SQL dialects work as we
 **[Ruben Naeff](https://generalassemb.ly/instructors/ruben-naeff/5543)**, _Data Scientist, Knewton_
 
 Ruben Naeff is from Amsterdam, the Netherlands, where he studied mathematics and worked as a strategy consultant and economic researcher. Currently, he works as a data scientist at Knewton, an adaptive education startup in New York City. Aside from his data science career, Ruben is a composer with a degree from NYU whose music has been performed throughout Europe, Asia and the United States. He has worked as a teacher as well, teaching mathematics, Dutch and music to students of all ages.
-Refund Policy
-
