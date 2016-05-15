@@ -3,6 +3,7 @@
 - [About this workshop](./about.md)
 - [Slides](./sql_slides.pdf)
 - [Exercises](./exercises.md)
+- [Answers](./answers.md)
 - [data folder](./data/)
 
 
