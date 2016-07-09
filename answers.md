@@ -152,6 +152,17 @@ GROUP BY LastName, FirstName
 HAVING NumberOfOrders >= 20
 ```
 
+Note, that in the case you have many employees, there is a chance you have different people with the same name. Then you want to group by the unique ID instead. Note that we don't list LastName, FirstName in the `GROUP BY` statement anymore, but also don't aggregate on them, so officially the result is undefined. Since the names are unique per ID, this is not an issue.
+
+```sql
+SELECT Employees.EmployeeID, LastName, FirstName, COUNT(OrderID) AS NumberOfOrders
+FROM Employees
+JOIN Orders
+ON Employees.EmployeeID = Orders.EmployeeID
+GROUP BY Employees.EmployeeID
+HAVING NumberOfOrders >= 20
+```
+
 
 - What is the name of the customer who has the most orders?
 
@@ -168,10 +179,11 @@ LIMIT 1
 - What supplier has the highest average product price?
 
 ```sql
-SELECT SupplierName, Price
+SELECT SupplierName, Round(Avg(Price), 2)
 FROM Suppliers
 JOIN Products
 ON Suppliers.SupplierID = Products.SupplierID
+GROUP BY SupplierName
 ORDER BY 2 DESC
 LIMIT 1
 ```
