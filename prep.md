@@ -9,12 +9,14 @@
 1. You'll be prompted with a *temporary password*, which you should copy/paste to a notepad or stickie on your machine. Please note that if you lose this password, you'll need to consult the section [How to Reset the Root Password](https://dev.mysql.com/doc/refman/5.7/en/resetting-permissions.html) in the MySQL reference manual. This can be a pain.
 1. Start your local SQL server. Go to |System Preferences..., select SQL Server, and in dialog window, click Start MySQL Server.
 1. Open your terminal, and type
+
   ```bash
   $ /usr/local/mysql/bin/mysql -u root -p
   Enter password:
   ```
 1. Enter the temporary password you were just given.
 1. A `mysql>` prompt starts, and enter your first command to remove the password altogether:
+
   ```bash
   mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '' PASSWORD EXPIRE NEVER;
   Query OK, 0 rows affected (0.00 sec)
