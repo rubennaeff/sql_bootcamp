@@ -34,9 +34,10 @@ We will be pausing to let students run and write queries of their own, so studen
 - MySQL Server, a mostly invisible program which stores information.
 - A MySQL Client, a program designed to help you interact with the server.
 
-For instructions how to install them, please watch the video for
-[Mac OS X](https://www.youtube.com/watch?v=aoMnggYTrDE) or
-[Windows](https://www.youtube.com/watch?v=ZtyVlGZeDWc).
+For instructions how to install them, please watch the
+[video for Mac OS X](https://www.youtube.com/watch?v=aoMnggYTrDE), follow the
+[written steps for Mac OS X](./prep.md) or watch the
+[video for Windows](https://www.youtube.com/watch?v=ZtyVlGZeDWc).
 Other server and client software is fine, too, and other SQL dialects work as well, e.g., SQLlite, MySQL, Postgres, and SQL Server. Access is strongly discouraged, though.
 
 
