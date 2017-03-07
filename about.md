@@ -38,7 +38,7 @@ For instructions how to install them, please watch the
 [video for Mac OS X](https://www.youtube.com/watch?v=aoMnggYTrDE), follow the
 [written steps for Mac OS X](./prep.md) or watch the
 [video for Windows](https://www.youtube.com/watch?v=ZtyVlGZeDWc).
-Other server and client software is fine, too, and other SQL dialects work as well, e.g., SQLlite, MySQL, Postgres, and SQL Server. Access is strongly discouraged, though.
+Other server and client software is fine, too, and other SQL dialects work as well, e.g., SQLlite, MySQL, Postgres, and SQL Server. Microsoft Access is strongly discouraged, though.
 
 
 ## About the Instructor

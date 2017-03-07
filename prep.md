@@ -1,4 +1,15 @@
-# Prereqs & Preparation
+# Preparation
+
+**Please install the following two tools prior to class:**
+
+- MySQL Server, a mostly invisible program which stores information.
+- A MySQL Client, a program designed to help you interact with the server.
+
+For Mac OS X, you could follow the steps below, or watch the
+[video](https://www.youtube.com/watch?v=aoMnggYTrDE). For Windows, please watch
+[this video](https://www.youtube.com/watch?v=ZtyVlGZeDWc).
+Other server and client software is fine, too, and other SQL dialects work as well, e.g., SQLlite, MySQL, Postgres, and SQL Server. Microsoft Access is strongly discouraged, though.
+
 
 ## Download a MySQL server
 

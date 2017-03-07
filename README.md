@@ -1,6 +1,7 @@
 # SQL BOOTCAMP
 
 - [About this workshop](./about.md)
+- [Preparation](./prep.md) _installing applications_
 - [Slides](./sql_slides.pdf)
 - [Exercises](./exercises.md)
 - [Answers](./answers.md)
